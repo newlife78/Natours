@@ -1,0 +1,71 @@
+/* PROJECT VARIABLES */
+
+:root {
+  /* Typography - Size */
+  --font-size-xxs: 10px;
+
+  /* Typography - Weight */
+  --font-super-light: 100;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 700;
+
+  /* Color - Brand */
+  --color-primary: #55c57a;
+  --color-primary-light: #7ed56f;
+  --color-primary-dark: #28b485;
+
+  /* Color - Extended */
+  --color-secondary-light: #ffbb00;
+  --color-secondary-dark: #ff6200;
+  --color-tertiary-light: #2998ff;
+  --color-tertiary-dark: #5643fa;
+
+  /* Color - Blurs */
+  --color-primary-light-blur-l: rgba(126, 213, 111, 0.8);
+  --color-primary-dark-blur-l: rgba(40, 180, 133, 0.8);
+  --color-primary-light-blur-xl: rgba(126, 213, 111, 0.85);
+  --color-primary-dark-blur-xl: rgba(40, 180, 133, 0.85);
+  --color-secondary-light-blur-xl: rgba(255, 185, 0, 0.85);
+  --color-secondary-dark-blur-xl: rgba(255, 98, 0, 0.85);
+  --color-tertiary-light-blur-xl: rgba(41, 152, 255, 0.85);
+  --color-tertiary-dark-blur-xl: rgba(84, 66, 250, 0.85);
+  --color-black-blur-xxs: rgba(0, 0, 0, 0.1);
+  --color-black-blur-xs: rgba(0, 0, 0, 0.15);
+  --color-black-blur-s: rgba(0, 0, 0, 0.2);
+  --color-black-blur-xm: rgba(0, 0, 0, 0.3);
+  --color-black-blur-m: rgba(0, 0, 0, 0.4);
+  --color-black-blur-xm: rgba(0, 0, 0, 0.5);
+  --color-black-blur-l: rgba(0, 0, 0, 0.8);
+  --color-white-blur-xm: rgba(255, 255, 255, 0.5);
+  --color-white-blur-l: rgba(255, 255, 255, 0.6);
+  --color-white-blur-xl: rgba(255, 255, 255, 0.8);
+
+  /* Color - Neutral */
+  --color-white: #ffffff;
+  --color-grey-light-1: #f1f1f4;
+  --color-grey-light-2: #e8e8ec;
+  --color-grey-light-3: #cdcdce;
+  --color-grey-dark-1: #9c9c9e;
+  --color-grey-dark-2: #7b7b7d;
+  --color-grey-dark-3: #6b6b6d;
+  --color-grey-dark-4: #4a4a4d;
+  --color-grey-dark-5: #333;
+
+  /* Border Radius */
+  --border-radius-soft-s: 2px;
+  --border-radius-soft: 3px;
+  --border-radius-semi-rounded: 50%;
+  --border-radius-rounded: 10rem;
+  --border-radius-circle: 100%;
+
+  /* Grid */
+  --grid-width: 114rem;
+  --gutter-vertical-s: 6rem;
+  --gutter-vertical: 8rem;
+  --gutter-horizontal: 6rem;
+
+  /*! App Settings */
+  --font-family: "Lato", sans-serif;
+  --line-height: 1.7;
+}

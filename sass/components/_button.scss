@@ -1,0 +1,98 @@
+/* COMPPONENT: Button */
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: var(--border-radius-rounded);
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem var(--color-black-blur-s);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem var(--color-black-blur-s);
+  }
+
+  &--white {
+    background-color: var(--color-white);
+    color: var(--color-grey-dark-4);
+
+    &::after {
+      background-color: var(--color-white);
+    }
+  }
+
+  &--green {
+    background-color: var(--color-primary);
+    color: var(--color-grey-light-1);
+
+    &::after {
+      background-color: var(--color-primary);
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-rounded);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animmated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-primary);
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 1rem 2rem var(--color-black-blur-xs);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem var(--color-black-blur-xs);
+    transform: translateY(0);
+  }
+}
